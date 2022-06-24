@@ -5,10 +5,11 @@
     </div>
     <div class="door" :class="{open}" @click="selected = !selected">
       <div class="number" :class="{selected}">{{number}}
-      
+
       </div>
       <div class="knob" @click.stop="open = true" :class="{selected}">
       </div>
+      <img v-if='open && hasGift' src="./laco.png">
     </div>
       <img v-if='open && hasGift' src="./1655943508990.png">
   </div>
@@ -77,6 +78,11 @@ export default {
   background-color: chocolate;
   padding: 20px;
   align-items: center;
+}
+.door > img{
+  width: 60%;
+  margin-top: 87%;
+  position: absolute;
 }
 .door .knob {
   height: 20px;

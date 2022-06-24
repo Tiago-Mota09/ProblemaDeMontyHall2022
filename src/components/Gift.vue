@@ -1,10 +1,16 @@
 <template>
+
+
   <div class="gift">
+    <div class="laco"></div>
     <div class="gift-tie-1"></div>
     <div class="gift-tie-2"></div>
-    <div class="gift-top"></div>
+    <div class="gift-top">
+    </div>
     <div class="gift-body"></div>
   </div>
+
+
 </template>
 
 <script>
@@ -25,6 +31,10 @@ export default {
   width: 100px;
   height: 25px;
   background-color: #7aa944;
+}
+.door-open > img {
+  width: 100px;
+  height: 35px;
 }
 .gift-body {
   width: 90px;
