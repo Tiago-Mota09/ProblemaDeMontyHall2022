@@ -1,5 +1,4 @@
 <template>
-
   <div class="door-area">
     <div class="door-frame" :class="{selected: selected && !open}">
       <Gift v-if="open && hasGift" />
